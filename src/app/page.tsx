@@ -3,7 +3,6 @@ import Bestfoodyproduct from "@/components/layout/Bestfoodyproduct";
 import Blog from "@/components/layout/Blog";
 import Chefs from "@/components/layout/Chefs";
 import Foodcatr from "@/components/layout/Foodcatr";
-import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/layout/Hero";
 import Nav from "@/components/layout/Nav";
 import Ourmenu from "@/components/layout/Ourmenu";
