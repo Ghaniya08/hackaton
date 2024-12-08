@@ -1,5 +1,5 @@
 
-import {menudata1, menudata2 , menudata3 ,menudata4} from "../../../Data/data"
+import {menudata1, menudata2 , menudata3 } from "../../../Data/data"
 import img2 from "../../../public/ourmenupage.png"
 import React from 'react'
 import Link from "next/link";
