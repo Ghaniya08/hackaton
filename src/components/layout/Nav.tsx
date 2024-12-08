@@ -49,11 +49,13 @@ const Nav = () => {
             <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackkk">
               <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/">Home</Link></li>
             <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourmenu">Menu</Link></li>
-            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/blog">Blog</Link></li>
+            
             <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourchef">Chef</Link></li>
-            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/aboutus">About</Link></li>
-            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourshop">Shop</Link></li>
+           
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/shop">Shop</Link></li>
             <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/signin">Signin</Link></li>
+               <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/aboutus">About</Link></li>
+              <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/blog">Blog</Link></li>
             </ul>
           </SheetContent>
         </Sheet>
