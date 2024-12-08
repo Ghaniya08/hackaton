@@ -47,13 +47,13 @@ const Nav = () => {
           </SheetTrigger>
           <SheetContent>
             <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackkk">
-              <li className="hover:text-bordercoloryello cursor-pointer">Home</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">Menu</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">Blog</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">Page</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">About</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">Shop</li>
-              <li className="hover:text-bordercoloryello cursor-pointer">Contact</li>
+              <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/">Home</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourmenu">Menu</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/blog">Blog</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourchef">Chef</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/aboutus">About</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/ourshop">Shop</Link></li>
+            <li className="hover:text-bordercoloryello cursor-pointer"><Link href="/signin">Signin</Link></li>
             </ul>
           </SheetContent>
         </Sheet>
