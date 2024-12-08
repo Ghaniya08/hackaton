@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { IoPlayOutline } from "react-icons/io5";
-import upper from "../../../public/cate1.png";
-import lemon from "../../../public/cate2.png";
-import yogurt from "../../../public/cate3.png";
-import pasta from "../../../public/cate4.png";
-import third from "../../../public/whyus1.png";
-import student from "../../../public/whyus2.png";
-import coffee from "../../../public/whyus5.png";
-import person from "../../../public/whyus6.png";
-import Testi from "@/components/layout/Testi";
+// import Image from "next/image";
+// import { IoPlayOutline } from "react-icons/io5";
+// import upper from "../../../public/cate1.png";
+// import lemon from "../../../public/cate2.png";
+// import yogurt from "../../../public/cate3.png";
+// import pasta from "../../../public/cate4.png";
+// import third from "../../../public/whyus1.png";
+// import student from "../../../public/whyus2.png";
+// import coffee from "../../../public/whyus5.png";
+// import person from "../../../public/whyus6.png";
+// import Testi from "@/components/layout/Testi";
 
 export default function About() {
   return (
