@@ -1,13 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-
 import footer1 from "../../../public/footer1.png";
 import footer2 from "../../../public/footer2.png";
 import footer3 from "../../../public/footer3.png";
-
-
-import { GiCook } from "react-icons/gi";
 import { PiClockClockwiseBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
