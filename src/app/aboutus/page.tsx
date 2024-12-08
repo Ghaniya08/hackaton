@@ -178,7 +178,7 @@ export default function About() {
     //   </section>
     // </div>
     <div>
-        <Testi/>
+{/*         <Testi/> */}
     </div>
   );
 }
