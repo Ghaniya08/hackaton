@@ -4,20 +4,53 @@ import { AiOutlineUser } from "react-icons/ai";
 import { SlEnvolope } from "react-icons/sl";
 import { IoIosCheckbox } from "react-icons/io";
 import { MdLockOutline } from "react-icons/md";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoSearch } from "react-icons/io5";
+import { PiUserBold } from "react-icons/pi";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-white">
+
       <header className="bg-black text-white">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <h1 className="text-2xl font-bold text-yellow-500">FoodTuck</h1>
-          <nav>
+          <nav className="lg:block hidden">
             <ul className="flex space-x-6">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/menu">Menu</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/ourmenu">Menu</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/ourchef">Chef</Link></li>
+            <li><Link href="/aboutus">About</Link></li>
+            <li><Link href="/ourshop">Shop</Link></li>
+            <li><Link href="/signin">Signin</Link></li>
             </ul>
           </nav>
+          <div className="flex gap-4 ">
+          <h1><IoSearch className="text-whitetext text-[24px] cursor-pointer" /></h1>
+          <h1><Link href={"/signup"}><PiUserBold className="text-whitetext text-[24px] cursor-pointer" /></Link></h1>
+          <h1><Link href={"/shoppingcart"}><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link> </h1>
+          </div>
+         <div className="lg:hidden block">
+         <Sheet>
+          <SheetTrigger>
+            <GiHamburgerMenu className="text-whitetext text-[24px] cursor-pointer" />
+          </SheetTrigger>
+          <SheetContent>
+            <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackkk">
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/ourmenu">Menu</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/ourchef">Chef</Link></li>
+            <li><Link href="/aboutus">About</Link></li>
+            <li><Link href="/ourshop">Shop</Link></li>
+            <li><Link href="/signin">Signin</Link></li>
+            </ul>
+          </SheetContent>
+        </Sheet> 
+         </div>
         </div>
       </header>
 
@@ -77,50 +110,6 @@ export default function SignUpPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black text-white">
-        <div className="container mx-auto py-10 px-6 grid grid-cols-4 gap-8">
-          {/* About Section */}
-          <div>
-            <h4 className="font-bold mb-2">About Us</h4>
-            <p>
-              Corporate clients and leisure travelers rely on FoodTuck for dependable service.
-            </p>
-            <p className="mt-2">Opening Hours: Mon-Sat 9:00 AM - 6:00 PM</p>
-          </div>
-          {/* Links */}
-          <div>
-            <h4 className="font-bold mb-2">Useful Links</h4>
-            <ul>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/menu">Menu</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
-          </div>
-          {/* Help */}
-          <div>
-            <h4 className="font-bold mb-2">Help</h4>
-            <ul>
-              <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/support-policy">Support Policy</Link></li>
-              <li><Link href="/privacy">Privacy</Link></li>
-            </ul>
-          </div>
-          {/* Recent Posts */}
-          <div>
-            <h4 className="font-bold mb-2">Recent Posts</h4>
-            <ul>
-              <li>Is fast food good for your body? - Feb 20, 2022</li>
-              <li>Change your food habit - Feb 18, 2022</li>
-              <li>Do you like fast food? - Feb 15, 2022</li>
-            </ul>
-          </div>
-        </div>
-        <p className="text-center py-4">
-          © 2024 FoodTuck. All Rights Reserved.
-        </p>
-      </footer>
     </div>
   );
 }
