@@ -17,9 +17,9 @@ const Nav = () => {
         <ul className='text-whitetext flex gap-[10px] font-medium leading-[24px] text-[15px] '>
         <Link href={"/"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>Home</li></Link>
         <Link href={"/ourmenu"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>Menu</li></Link>
-        <li className='w-[45px] h-[24px] font-medium leading-[24px] '>Blog</li>
+        <Link href={"/blog"}<li className='w-[45px] h-[24px] font-medium leading-[24px] '>Blog</li></Link>
         <Link href={"/ourchef"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>Chef</li></Link>
-        <li className='w-[45px] h-[24px] font-medium leading-[24px] '>About</li>
+        <Link href={"/aboutus"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>About</li></Link>
         <Link href={"/shop"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>Shop</li></Link>
         <Link href={"/signin"}><li className='w-[45px] h-[24px] font-medium leading-[24px] '>Signin</li></Link>
       </ul>
