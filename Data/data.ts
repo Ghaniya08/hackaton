@@ -174,7 +174,7 @@ export const cartdata = [
 export const datablog = [
     {
         id:0,
-        title:"10 Reasons To Do A Digital Detox Challenge",
+        title:"10 Reasons To Do A Digital Detox ",
         para: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
         image: "https://images.pexels.com/photos/2092906/pexels-photo-2092906.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
@@ -198,13 +198,13 @@ export const datablog = [
     },
     {
         id:4,
-        title:"10 Reasons To Do A Digital Detox Challenge",
+        title:"10 Reasons To Do A Digital Detox ",
         para: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
         image:"https://images.pexels.com/photos/29684989/pexels-photo-29684989/free-photo-of-delicious-indian-mutton-curry-in-traditional-pan.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         id:5,
-        title:"The Ultimate Hangover Burger: Egg in a Hole Burger",
+        title:"The Ultimate Hangover Burgerr",
         para: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
         image:"https://images.pexels.com/photos/29631459/pexels-photo-29631459/free-photo-of-delicious-stir-fried-vegetables-with-tofu.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
