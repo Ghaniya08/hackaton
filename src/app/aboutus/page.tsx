@@ -3,7 +3,6 @@ import { IoPlayOutline } from "react-icons/io5";
 import salat from "../../../public/cate3.png";
 import third from "../../../public/whyus4.png";
 import whyus3 from "../../../public/whyus3.png";
-import pizza from "../../../public/pizza.png";
 import spoon from "../../../public/spoon.png";
 import food from "../../../public/food.png";
 import pro from "../../../public/proffcheff.png";
