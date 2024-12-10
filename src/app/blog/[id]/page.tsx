@@ -76,7 +76,7 @@ const page = ({params} : Paramsin) => {
         </div>
       </section>
       <div className='lg:flex gap-4 px-6 lg:px-48 mt-[100px] mb-[100px] justify-between'>
-      <div className='w-[600px] '>
+      <div className='lg:w-[600px] '>
                 <div className='flex flex-col gap-4 justify-center mb-[50px]'>
                    <Image src={filterd?.image || "/fallback-image.jpg"} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px] w-[300px] h-[250px]'/>
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-bordercoloryello text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
