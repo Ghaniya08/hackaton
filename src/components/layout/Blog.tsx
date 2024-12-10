@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link';
 import { MdThumbUpOffAlt } from "react-icons/md";
 import { LiaCommentDotsSolid } from "react-icons/lia";
 import { LuShare2 } from "react-icons/lu";
