@@ -24,7 +24,7 @@ export default function SignUpPage() {
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/ourchef">Chef</Link></li>
             <li><Link href="/aboutus">About</Link></li>
-            <li><Link href="/ourshop">Shop</Link></li>
+            <li><Link href="/shop">Shop</Link></li>
             <li><Link href="/signin">Signin</Link></li>
             </ul>
           </nav>
@@ -45,7 +45,7 @@ export default function SignUpPage() {
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/ourchef">Chef</Link></li>
             <li><Link href="/aboutus">About</Link></li>
-            <li><Link href="/ourshop">Shop</Link></li>
+            <li><Link href="/shop">Shop</Link></li>
             <li><Link href="/signin">Signin</Link></li>
             </ul>
           </SheetContent>
