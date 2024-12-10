@@ -81,21 +81,21 @@ const page = ({params} : Paramsin) => {
                    <Image src={filterd?.image || "/fallback-image.jpg"} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px] w-[300px] h-[250px]'/>
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-bordercoloryello text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
                     <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-blackkk'>{filterd?.title}</h1>
-                    <p className='lg:w-[550px] h-[120px] w-[340px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
-                    <p className='lg:w-[550px] h-[120px] w-[340px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
-                    <p className='lg:w-[550px] h-[120px] w-[340px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
+                    <p className='lg:w-[550px] h-[120px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
+                    <p className='lg:w-[550px] h-[120px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
+                    <p className='lg:w-[550px] h-[120px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
 
                     <div className='lg:flex  gap-7 mt-[20px] lg:w-[580px] w-[300px]'>
                       <div>
                       <Image src={filterd?.img2|| "/fallback-image.jpg"} alt='blogs' width={100} height={100} className='lg:w-[400px] mt-[20px] lg:h-[200px]  w-[300px] h-[250px]'/>
                       </div>
                       <div className=''>
-                      <p className='lg:w-[300px] h-[120px] w-[340px] pt-[30px] font-medium text-[14px] text-blackkk]'>{filterd?.para}</p>
+                      <p className='lg:w-[300px] h-[120px] w-[300px] pt-[30px] font-medium text-[14px] text-blackkk]'>{filterd?.para}</p>
                       </div>
                     </div>
                     
-                    <p className='lg:w-[550px] h-[120px] w-[340px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
-                    <p className='lg:w-[550px] h-[120px] w-[340px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
+                    <p className='lg:w-[550px] h-[120px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
+                    <p className='lg:w-[550px] h-[120px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{filterd?.para}</p>
                     <div className='border-[1px] lg:h-[40px] h-[55px] lg:mt-0 mt-[40px] lg:flex justify-between p-2 text-[13px] '>
                       <div className='flex gap-3'>
                       <h1 className='font-bold'>Tags:</h1>
@@ -360,4 +360,3 @@ const page = ({params} : Paramsin) => {
   )
 }
 export default page
-
