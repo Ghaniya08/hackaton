@@ -125,10 +125,7 @@ const page = () => {
           </section>
 
         <div className="border-[1px] border-gray-400 mt-10 px-6 py-4 max-w-[400px] mx-auto">
-  {/* Heading */}
   <h1 className="text-lg font-bold py-4 border-b-[1px] border-gray-300">Recent Posts</h1>
-
-  {/* Post 1 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/burger.png"
@@ -144,8 +141,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 2 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -161,8 +156,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 3 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -178,8 +171,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 4 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/3picofcart.png"
@@ -199,10 +190,7 @@ const page = () => {
 
 
         <div className="border-[1px] border-gray-400 mt-10 px-6 py-4 max-w-[400px] mx-auto">
-  {/* Heading */}
   <h1 className="text-lg font-bold py-4 border-b-[1px] border-gray-300">Filter by menu</h1>
-
-  {/* Post 1 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/burger.png"
@@ -218,8 +206,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 2 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -235,8 +221,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 3 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -252,8 +236,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-  {/* Post 4 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/3picofcart.png"
