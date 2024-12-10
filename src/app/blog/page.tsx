@@ -78,7 +78,7 @@ const page = () => {
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-bordercoloryello text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
                     <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-blackkk'>{blog.title}</h1>
                     <p className='lg:w-[550px] h-[120px] w-[360px] pt-[30px] font-medium text-[15px] text-blackkk]'>{blog.para}</p>
-                    <button className='border text-bordercoloryello lg:mt-0 mt-[30px] border-bordercoloryello w-[150px] h-[52px] p-3 rounded-[6px] flex gap-2 '><LuArrowUpFromLine className='text-xl text-bordercoloryello'/> Read more </button>
+                    <Link href={`/blog/${blog.id}`}><button className='border text-bordercoloryello lg:mt-0 mt-[30px] border-bordercoloryello w-[150px] h-[52px] p-3 rounded-[6px] flex gap-2 '><LuArrowUpFromLine className='text-xl text-bordercoloryello'/> Read more </button></Link>
                 </div>
             )
         })}
@@ -125,7 +125,10 @@ const page = () => {
           </section>
 
         <div className="border-[1px] border-gray-400 mt-10 px-6 py-4 max-w-[400px] mx-auto">
+  {/* Heading */}
   <h1 className="text-lg font-bold py-4 border-b-[1px] border-gray-300">Recent Posts</h1>
+
+  {/* Post 1 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/burger.png"
@@ -141,6 +144,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 2 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -156,6 +161,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 3 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -171,6 +178,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 4 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/3picofcart.png"
@@ -190,7 +199,10 @@ const page = () => {
 
 
         <div className="border-[1px] border-gray-400 mt-10 px-6 py-4 max-w-[400px] mx-auto">
+  {/* Heading */}
   <h1 className="text-lg font-bold py-4 border-b-[1px] border-gray-300">Filter by menu</h1>
+
+  {/* Post 1 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/burger.png"
@@ -206,6 +218,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 2 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -221,6 +235,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 3 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/fries.png"
@@ -236,6 +252,8 @@ const page = () => {
       </h2>
     </div>
   </div>
+
+  {/* Post 4 */}
   <div className="flex gap-4 mt-6">
     <Image
       src="/3picofcart.png"
