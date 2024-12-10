@@ -64,7 +64,7 @@ const page = () => {
         <div className="text-center text-white">
           <h2 className="text-4xl font-bold">Blog List</h2>
           <p className="pt-2">
-            <Link href="/" className="text-yellow-400">Home</Link> › Chef
+            <Link href="/" className="text-yellow-400">Home</Link> › Blog
           </p>
         </div>
       </section>
