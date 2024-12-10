@@ -70,14 +70,14 @@ const page = () => {
       </section>
 
       <div className='lg:flex gap-4 px-6 lg:px-48 mt-[100px] mb-[100px] justify-between'>
-      <div className='w-[600px] '>
+      <div className='lg:w-[600px] '>
         {datablog.map((blog)=>{
             return(
                 <div key={blog.id} className='flex flex-col gap-4 justify-center mb-[50px]'>
                    <Image src={blog.image} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px] w-[300px] h-[250px]'/>
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-bordercoloryello text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
                     <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-blackkk'>{blog.title}</h1>
-                    <p className='lg:w-[550px] h-[120px] w-[360px] pt-[30px] font-medium text-[15px] text-blackkk]'>{blog.para}</p>
+                    <p className='lg:w-[550px] h-[170px] w-[300px] pt-[30px] font-medium text-[15px] text-blackkk]'>{blog.para}</p>
                     <Link href={`/blog/${blog.id}`}><button className='border text-bordercoloryello lg:mt-0 mt-[30px] border-bordercoloryello w-[150px] h-[52px] p-3 rounded-[6px] flex gap-2 '><LuArrowUpFromLine className='text-xl text-bordercoloryello'/> Read more </button></Link>
                 </div>
             )
@@ -333,7 +333,6 @@ const page = () => {
     />
         </div>
         </div>
-        
         <div className="border-[1px] border-gray-400 mt-10 px-[22px] py-4 max-w-[400px] mx-auto">
         <h1 className='text-2xl font-bold'>Follow us</h1>
         <div className='flex gap-4 justify-center text-xl text-blackkk mt-1'>
@@ -342,14 +341,10 @@ const page = () => {
                 <a href="https://instagram.com/ghaniya08">< FaInstagram/></a>
                 <a href="https://www.facebook.com/profile.php?id=61554662968933&mibextid=ZbWKwL"><FaFacebook /></a>
         </div>
-
         </div>
-
-
      </div>
       </div>
     </div>
   )
 }
-
 export default page
