@@ -1,4 +1,4 @@
- import Image from "next/image"
+import Image from "next/image"
 import Link from "next/link";
 import latest1 from "../../../public/latestnew1.png"
 import { IoIosArrowBack } from "react-icons/io"; 
@@ -42,7 +42,7 @@ export default function CheckoutPage() {
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/ourchef">Chef</Link></li>
             <li><Link href="/aboutus">About</Link></li>
-            <li><Link href="/ourshop">Shop</Link></li>
+            <li><Link href="/shop">Shop</Link></li>
             <li><Link href="/signin">Signin</Link></li>
             </ul>
           </SheetContent>
