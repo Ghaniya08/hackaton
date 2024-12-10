@@ -128,8 +128,11 @@ const Comment = () => {
           </div>
         </div>
         <div className="p-2 w-full">
-          <button className="flex mx-auto text-white bg-myverydarkpink border-0 py-2 px-8 focus:outline-none hover:bg-myverydarkpink/70 rounded text-lg">
-           Send Message
+        <button
+            type="submit"
+            className="px-6 py-2 bg-bordercoloryello text-white font-semibold "
+          >
+            Post a Comment
           </button>
         </div>
         </div>
