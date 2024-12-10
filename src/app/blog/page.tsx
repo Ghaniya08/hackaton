@@ -74,7 +74,7 @@ const page = () => {
         {datablog.map((blog)=>{
             return(
                 <div key={blog.id} className='flex flex-col gap-4 justify-center mb-[50px]'>
-                   <Image src={blog.image} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px]'/>
+                   <Image src={blog.image} alt='blogs' width={400} height={400} className='lg:w-[600px] lg:h-[450px] w-[300px] h-[250px]'/>
                     <h1 className='flex gap-3 text-gray-600 '><BsCalendarMonth className='text-bordercoloryello text-2xl'/> Feb 14, 2022 /<GoCommentDiscussion className='text-bordercoloryello text-2xl'/>  3 / <PiUserCircleGear className='text-bordercoloryello text-2xl'/>Admin</h1>
                     <h1 className='lg:text-[24px] text-[20px] font-bold font-helvetica text-blackkk'>{blog.title}</h1>
                     <p className='lg:w-[550px] h-[120px] w-[360px] pt-[30px] font-medium text-[15px] text-blackkk]'>{blog.para}</p>
@@ -84,7 +84,7 @@ const page = () => {
         })}
       </div>
 
-      <div className='w-[300px] h-auto border-gray-400 border '>
+      <div className='w-[300px] h-fit '>
       <div className="flex items-center gap-[10px] w-full h-[40px] border text-blackkk border-gray-500">
             <input
               type="text"
@@ -94,7 +94,7 @@ const page = () => {
             <IoSearch className="text-whitetext w-[40px] h-[40px] bg-bordercoloryello p-2" />
           </div>
 
-          <section className="text-gray-600 body-font">
+          <section className="text-gray-600 border-[1px] body-font border-gray-400 mt-10 max-w-[400px] pb-[20px] mx-auto">
   <div className="container px-5 py-2 ">
     <div className=" sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div className="px-4 w-[280px] flex flex-col text-center items-center">
