@@ -71,7 +71,7 @@ const page = ({params} : Paramsin) => {
         <div className="text-center text-white">
           <h2 className="text-4xl font-bold">Blog List</h2>
           <p className="pt-2">
-            <Link href="/" className="text-yellow-400">Home</Link> › Chef
+            <Link href="/" className="text-yellow-400">Home</Link> › Blog Detail
           </p>
         </div>
       </section>
