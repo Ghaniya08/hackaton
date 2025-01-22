@@ -69,7 +69,7 @@ async function handleSubmit(event: any) {
     address2: "",
   });
   const [showPopup, setShowPopup] = useState(false);
-  const [generatedUserId, setGeneratedUserId] = useState("");
+  const [generatedUserId] = useState("");
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart") || "[]");
