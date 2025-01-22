@@ -1,13 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-
 import footer1 from "../../../public/footer1.png";
 import footer2 from "../../../public/footer2.png";
 import footer3 from "../../../public/footer3.png";
-
-
-import { GiCook } from "react-icons/gi";
 import { PiClockClockwiseBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -17,7 +12,7 @@ import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blackkk">
+    <footer className="bg-black">
         <div className="flex flex-col md:flex-row justify-between items-center px-[135px] py-[50px]">
           <div className="text-white md:w-[50%] w-[100%]">
               <h2 className="text-[20px] md:text-[32px] font-semibold"><span className="text-[#FF9F0D]">St</span>ill Need Our Support</h2>
@@ -190,7 +185,24 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className=" px-4 py-6 bg-bordercoloryello w-full  md:flex md:items-center md:justify-between">
+        {/* <div className=" px-4 py-6 bg-bordercoloryello w-full  md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+            © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
+            Reserved.
+          </span>
+
+          <div className="flex justify-center gap-[14px] ">
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><a href="https://www.facebook.com/profile.php?id=61554662968933&mibextid=ZbWKwL"><FaFacebookF /></a></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaTwitter /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><a href="https://instagram.com/ghaniya08">< FaInstagram/></a></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaYoutube /></div>
+            <div className="bg-white w-[36px] h-[34px] flex justify-center items-center rounded"><FaPinterest /></div>
+          </div>
+         
+        </div> */}
+      </div>
+
+      <div className=" px-4 py-6 bg-bordercoloryello w-full  md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
             © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
             Reserved.
@@ -205,7 +217,6 @@ const Footer = () => {
           </div>
          
         </div>
-      </div>
     </footer>
   );
 };

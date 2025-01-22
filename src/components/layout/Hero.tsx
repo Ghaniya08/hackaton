@@ -24,7 +24,7 @@ const Hero = () => {
         <button className='lg:w-[150px] w-[100px] h-[30px] lg:h-[50px] rounded-[30px] bg-bordercoloryello text-whitetext'>See Menu</button>
       </div>
       <div>
-        <Image src={heroimg} alt='' className='"w-[200px] h-auto lg:w-[600px] lg:h-[430px] object-cover rounded-[20px] lg:rounded-[30px]'/>
+        <Image src={heroimg} alt='' className='"w-[200px] h-auto lg:w-[550px] lg:h-[430px] object-cover rounded-[20px] lg:rounded-[30px]'/>
       </div>
     </div>
   )

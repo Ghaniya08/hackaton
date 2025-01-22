@@ -328,6 +328,20 @@ export const shoppage = [
 ] 
 export const shopdetail = [
     {id:0,
+     description: "Lorem Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor auctor eget vitae arcu. Nam tempor malesuada porttitor. Nulla quis dignissim ipsum. Aliquam pulvinar iaculis justo, sit amet interdum sem hendrerit vitae. Vivamus vel erat tortor. Nulla facilisi. In nulla quam, lacinia eu aliquam ac, aliquam in nisl. ",
+     senddespara:"Suspendisse cursus sodales placerat. Morbi eu lacinia ex. Curabitur blandit justo urna, id porttitor est dignissim nec. Pellentesque scelerisque hendrerit posuere. Sed at dolor quis nisi rutrum accumsan et sagittis massa. Aliquam aliquam accumsan lectus quis auctor. Curabitur rutrum massa at volutpat placerat. Duis sagittis vehicula fermentum. Integer eu vulputate justo. Aenean pretium odio vel tempor sodales. Suspendisse eu fringilla leo, non aliquet sem.",
+     firstkeybenficts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    secondkey: "Maecenas ullamcorper est et massa mattis condimentum.",
+    thirdkey: "Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.",
+    fourthkey:"Etiam nec massa et lectus faucibus ornare congue in nunc.",
+    fiftkey:"Mauris eget diam magna, in blandit turpis.",
+    },
+]
+
+
+
+export const cartItems = [
+    {id:0,
      image:"https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600",
      para: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
      title: "Pan Cake",

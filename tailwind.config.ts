@@ -2,6 +2,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
     darkMode: ["class"],
+	daisyui: {
+		themes: ["autumn"],}
+		,
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -65,6 +68,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate"), ('daisyui')],
+  plugins: [require("tailwindcss-animate"),require("daisyui")],
 };
 export default config;

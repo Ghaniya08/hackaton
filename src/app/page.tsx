@@ -1,9 +1,8 @@
 import ActiveProcess from "@/components/layout/Activeprocess";
 import Bestfoodyproduct from "@/components/layout/Bestfoodyproduct";
 import Blog from "@/components/layout/Blog";
-import Chefs from "@/components/layout/Chefs";
+import Chef from "@/components/layout/Chefs";
 import Foodcatr from "@/components/layout/Foodcatr";
-import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/layout/Hero";
 import Nav from "@/components/layout/Nav";
 import Ourmenu from "@/components/layout/Ourmenu";
@@ -13,13 +12,8 @@ import Whyus from "@/components/layout/Whyus";
 
 export default function Home() {
   return (
-    <div className="bg-blackkk">
-      {/* <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-          rel="stylesheet"
-        />
-      </head> */}
+    <>
+     <div className="bg-blackkk">
      <Nav/>
      <HeroSection/>
      <Bestfoodyproduct/>
@@ -27,11 +21,11 @@ export default function Home() {
     <Whyus/>
     <Review/>
     <Ourmenu/>
-    <Chefs/>
+    <Chef/>
     <Testi/>
     <ActiveProcess/>
     <Blog/>
-
     </div>
+    </> 
   );
 }

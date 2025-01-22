@@ -3,18 +3,14 @@ import {databloglistindivi} from "../../../../Data/data"
 import Image from 'next/image'
 import { IoIosStar } from "react-icons/io";
 import client from "../../../../public/client.png"
-import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
-import { PiUserBold } from "react-icons/pi";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GoCommentDiscussion } from "react-icons/go";
 import { PiUserCircleGear } from "react-icons/pi";
 import { IoLogoGithub } from "react-icons/io";
 import { FaInstagram ,FaFacebook  ,FaLinkedin  } from "react-icons/fa6";
 import { BsCalendarMonth } from "react-icons/bs";
-import Link from 'next/link';
 import CommentSection from '@/components/layout/Comment';
+import Header from '@/components/layout/Header';
 interface Paramsin {
   params: {
       id : string
@@ -25,56 +21,7 @@ const page = ({params} : Paramsin) => {
     const filterd = databloglistindivi.find((item:any) => item.id === paramid )
   return (
     <div className=''>
-        <header className="bg-black text-white">
-        <div className="container mx-auto flex justify-between items-center py-4 px-6">
-          <h1 className="text-2xl font-bold text-yellow-500">FoodTuck</h1>
-          <nav className="lg:block hidden">
-            <ul className="flex space-x-6">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/ourmenu">Menu</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/ourchef">Chef</Link></li>
-            <li><Link href="/aboutus">About</Link></li>
-            <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/signin">Signin</Link></li>
-            </ul>
-          </nav>
-          <div className="flex gap-4 ">
-          <h1><IoSearch className="text-whitetext text-[24px] cursor-pointer" /></h1>
-          <h1><Link href={"/signup"}><PiUserBold className="text-whitetext text-[24px] cursor-pointer" /></Link></h1>
-          <h1><Link href={"/shoppingcart"}><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link> </h1>
-          </div>
-         <div className="lg:hidden block">
-         <Sheet>
-          <SheetTrigger>
-            <GiHamburgerMenu className="text-whitetext text-[24px] cursor-pointer" />
-          </SheetTrigger>
-          <SheetContent>
-            <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackkk">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/ourmenu">Menu</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/ourchef">Chef</Link></li>
-            <li><Link href="/aboutus">About</Link></li>
-            <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/signin">Signin</Link></li>
-            </ul>
-          </SheetContent>
-        </Sheet> 
-         </div>
-        </div>
-      </header>
-      <section
-        className="bg-cover bg-center h-64 flex items-center justify-center"
-        style={{ backgroundImage: "url('/allnav.png')" }}
-      >
-        <div className="text-center text-white">
-          <h2 className="text-4xl font-bold">Blog List</h2>
-          <p className="pt-2">
-            <Link href="/" className="text-yellow-400">Home</Link> › Blog Detail
-          </p>
-        </div>
-      </section>
+         <Header text="blog detail" title="Blog Detail"/>
       <div className='lg:flex gap-4 px-6 lg:px-48 mt-[100px] mb-[100px] justify-between'>
       <div className='lg:w-[600px] '>
                 <div className='flex flex-col gap-4 justify-center mb-[50px]'>

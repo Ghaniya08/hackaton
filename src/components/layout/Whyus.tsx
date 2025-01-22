@@ -13,7 +13,7 @@ import React from 'react'
 const Whyus = () => {
   return (
     
-    <div className='w-full h-[716px] flex mt-[100px] lg:px-[100px] overflow-hidden px-[20px]'>
+    <div className='w-full lg:h-[716px] flex mt-[100px] lg:px-[100px] overflow-hidden px-[20px]'>
     <div className='xl:block md:hidden sm:hidden hidden lg:hidden'>
     <div className='grid grid-cols-2 grid-row-2 '>
         <Image src={whyus1} alt='' className='w-[262px] h-[256px] rounded-[6px]' />    
@@ -35,15 +35,6 @@ const Whyus = () => {
           <h1 className='text-whitetext text-center font-medium'><PiHamburgerLight className=' lg:w-[102px] lg:h-[100px] h-10 w-10 rounded-[6px] bg-bordercoloryello text-whitetext text-center'/>Fast Food</h1>
           <h1 className='text-whitetext text-center font-medium'>< PiCookieLight className=' lg:w-[102px] lg:h-[100px] h-10 w-10 rounded-[6px] bg-bordercoloryello text-whitetext text-center'/>Lunch</h1>
           <h1 className='text-whitetext text-center font-medium'><GiWineGlass className='text-xs lg:w-[102px] w-10 lg:h-[100px] h-10 rounded-[6px] bg-bordercoloryello text-whitetext text-center'/>Dinner</h1>
-        </div>
-        <div className='lg:w-[304px] w-[200px] flex gap-[20px] lg:px-[50px] lg:py-[20px] h-[93px] rounded-[6px] bg-whitetext'>
-          <div>
-          <h1 className='font-bold leading-[56px] text-[48px] text-bordercoloryello'>30+</h1>
-          </div> 
-<div>
-<h1>Year of</h1>
-<h1 className=' font-bold leading-[32px] text-blackkk'>Experienced</h1>
-</div>
         </div>
       </div>
     </div>
