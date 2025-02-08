@@ -4,7 +4,7 @@ import Image from "next/image";
 import { signIn, signOut } from "../../../auth";
 import Link from "next/link";
 
-export default function ClientAuthpic({ session }) {
+export default function ClientAuthpic({ session }:any) {
     const user = session?.user;
 
     return user ? (
