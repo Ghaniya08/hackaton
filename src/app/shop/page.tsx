@@ -73,32 +73,7 @@ const ShopPage = () => {
     if (typeof window !== "undefined") {
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
     }
-  };
-  const notify = (message: any, type: any) => {
-    if (type === "success") {
-      toast.success(message, {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    } else if (type === "error") {
-      toast.error(message, {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    }
-  };   
+  }; 
   const uniqueCategories = datas.filter(
     (item, index, self) =>
       index === self.findIndex((t) => t.category === item.category)
