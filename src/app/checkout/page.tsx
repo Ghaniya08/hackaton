@@ -11,112 +11,6 @@ interface CartItem {
   image: string;
 }
 export default function CheckoutPage() {
-  // async function handleSubmit(event: any) {
-  //   event.preventDefault();
-  //   const formData = new FormData(event.target);
-  //   formData.append("access_key", "30c787a3-d0e8-460d-8f5b-cc8e4228caed");
-  //   formData.append("userId", generatedUserId);
-  //   formData.append(
-  //     "fullName",
-  //     `${userDetails.firstName} ${userDetails.lastName}`
-  //   );
-  //   formData.append("email", userDetails.email);
-  //   formData.append("phone", userDetails.phone);
-  //   formData.append("company", userDetails.company);
-  //   formData.append(
-  //     "address",
-  //     `${userDetails.address1}, ${userDetails.address2}, ${userDetails.city}, ${userDetails.zipCode}, ${userDetails.country}`
-  //   );
-  //   formData.append("orderTotal", calculateTotal());
-  //   const cartDetails = cartItems
-  //     .map(
-  //       (item) =>
-  //         `${item.title} (Qty: ${item.quantity}, Price: $${(
-  //           item.price * item.quantity
-  //         ).toFixed(2)})`
-  //     )
-  //     .join("\n");
-  //   formData.append("cartItems", cartDetails);
-  //   formData.append("orderStatus", "Order Confirmed");
-  //   const object = Object.fromEntries(formData);
-  //   const json = JSON.stringify(object);
-  //   try {
-  //     const response = await fetch("https://api.web3forms.com/submit", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Accept: "application/json",
-  //       },
-  //       body: json,
-  //     });
-  //     const result = await response.json();
-  //     if (result.success) {
-  //       console.log("Email sent successfully:", result);
-  //     } else {
-  //       console.error("Failed to send email:", result);
-  //     }
-  //     setShowPopup(true);
-  //   } catch (error) {
-  //     console.error("Error during form submission:", error);
-  //     alert("An error occurred. Please try again.");
-  //   }
-  // }
-  // async function handleSubmit(event:any) {
-  //   event.preventDefault();
-  //   const formData = new FormData(event.target);
-  //   const orderData = {
-  //     userId,
-  //     fullName: `${userDetails.firstName} ${userDetails.lastName}`,
-  //     email: userDetails.email,
-  //     phone: userDetails.phone,
-  //     company: userDetails.company,
-  //     address: `${userDetails.address1}, ${userDetails.address2}, ${userDetails.city}, ${userDetails.zipCode}, ${userDetails.country}`,
-  //     orderTotal: calculateTotal(),
-  //     cartItems,
-  //     orderStatus: "Order Confirmed",
-  //   };
-  
-  //   try {
-  //     // Save Order in Sanity
-  //     const sanityResponse = await fetch("/api/saveorder", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(orderData),
-  //     });
-  
-  //     const sanityResult = await sanityResponse.json();
-  
-  //     if (!sanityResult.success) {
-  //       throw new Error("Failed to save order in Sanity");
-  //     }
-  //     formData.append("access_key", "30c787a3-d0e8-460d-8f5b-cc8e4228caed");
-  //     formData.append("orderData", JSON.stringify(orderData));
-  
-  //     const emailResponse = await fetch("https://api.web3forms.com/submit", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Accept: "application/json",
-  //       },
-  //       body: JSON.stringify(Object.fromEntries(formData)),
-  //     });
-  
-  //     const emailResult = await emailResponse.json();
-  
-  //     if (!emailResult.success) {
-  //       throw new Error("Failed to send email");
-  //     }
-  
-  //     console.log("Order saved & email sent:", sanityResult, emailResult);
-  //     setShowPopup(true);
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //     alert("An error occurred. Please try again.");
-  //   }
-    
-  // }
   const [showPopup, setShowPopup] = useState(false);
   async function handleSubmit(event: any) {
     event.preventDefault();
@@ -189,8 +83,10 @@ export default function CheckoutPage() {
     address1: "",
     address2: "",
   });
+
   // const [generatedUserId] = useState("");
   const userId = `USER-${Date.now()}`;
+
   useEffect(() => {
       const storedCart = JSON.parse(localStorage.getItem("cart") || "[]");
       setCartItems(storedCart);

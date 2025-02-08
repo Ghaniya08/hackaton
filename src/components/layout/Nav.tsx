@@ -167,6 +167,7 @@ const Nav = () => {
                                     <li><Link href="/user">Profile</Link></li>
                                     <Link href="/user"><PiUserBold className="text-whitetext text-[24px] cursor-pointer" /></Link>
                                     <Link href="/ordertracking"><TbBrowserCheck className="text-whitetext text-[24px] cursor-pointer" /></Link>
+
                                 </ul>
                                 <div className='flex gap-7'>
                                 <Link href="/shoppingcart">
