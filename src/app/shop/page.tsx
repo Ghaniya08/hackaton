@@ -5,7 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Header from "@/components/layout/Header";
 import SearchableProductList from "@/components/layout/Searchbar";
 import Link from "next/link";
-import { toast, ToastContainer} from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
