@@ -1,7 +1,6 @@
 import Header from '@/components/layout/Header';
 import Link from 'next/link';
 import React from 'react';
-
 const UserProfile = () => {
   return (
    <div className=''>
@@ -15,7 +14,6 @@ const UserProfile = () => {
         </div>
         <h2 className="text-center text-2xl font-semibold text-gray-800 mb-2">John Doe</h2>
         <p className="text-center text-gray-600 mb-6">Food Enthusiast</p>
-
         <div className="space-y-4">
           <div className="flex justify-between items-center border-b pb-2">
             <span className="text-gray-700 font-medium">Email</span>
@@ -34,7 +32,6 @@ const UserProfile = () => {
             <span className="text-gray-600">New York, USA</span>
           </div>
         </div>
-
         <div className="mt-6 flex gap-3">
           <button className="w-full bg-yellow-400 text-white py-2 px-4 rounded-lg shadow hover:bg-yellow-500 transition">
             Edit Profile
@@ -50,5 +47,35 @@ const UserProfile = () => {
    </div>
    );
 };
-
 export default UserProfile;
+
+// import { useEffect, useState } from "react";
+
+// export default function AccountPage() {
+//   const [user, setUser] = useState(null);
+
+//   useEffect(() => {
+//     const userData = localStorage.getItem("user");
+//     if (userData) {
+//       setUser(JSON.parse(userData));
+//     }
+//   }, []);
+
+//   if (!user) {
+//     return <p>Loading...</p>;
+//   }
+
+//   return (
+//     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+//       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+//         <h2 className="text-2xl font-bold mb-4">Account Details</h2>
+//         <p>
+//           <strong>Name:</strong> {user.name}
+//         </p>
+//         <p>
+//           <strong>Email:</strong> {user.email}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }

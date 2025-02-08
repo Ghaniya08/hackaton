@@ -1,15 +1,58 @@
+"use client";
+import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineUser } from "react-icons/ai";
 import { SlEnvolope } from "react-icons/sl";
-import { IoIosCheckbox } from "react-icons/io";
 import { MdLockOutline } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 import { PiUserBold } from "react-icons/pi";
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export default function SignUpPage() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    userName: '',
+  });
+
+  const router = useRouter();
+
+  const handleChange = (e:any) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
+
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/creatUsers', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success(data.message);
+        router.push('/signin');
+      } else {
+        toast.error(data.error || 'Failed to create account. Please try again.');
+      }} catch (error) {
+      console.error('Error:', error);
+      toast.error('Failed to create account. Please try again.');
+    }};
   return (
     <div className="min-h-screen bg-white">
       <header className="bg-black text-white">
@@ -64,32 +107,46 @@ export default function SignUpPage() {
       <section className="py-16">
         <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
           <h3 className="text-2xl font-bold mb-6 ">Sign Up</h3>
-          <form>
-            <div className="mb-4">
-              {/* <label className="block mb-2 font-medium">Name</label> */}
-              <h1
-                className="w-full border rounded px-3 py-2 focus:ring focus:ring-yellow-300 flex gap-2" ><AiOutlineUser className="text-xl"/> Name</h1>
-            </div>
-            <div className="mb-4">
-              <h1
-                className="w-full border rounded px-3 py-2 focus:ring focus:ring-yellow-300 flex gap-2"><SlEnvolope className="text-xl"/> Email</h1>
-            </div>
-            <div className="mb-4">
-              <h1 className="w-full border rounded px-3 py-2 focus:ring focus:ring-yellow-300 flex gap-2"><MdLockOutline  className="text-xl"/> Password</h1>
-            </div>
-            <div className="flex items-center mb-4">
-            <IoIosCheckbox className="text-bordercoloryello text-xl"/>
-              <span>Remember me?</span>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 "
-            >
-              Sign Up
-            </button>
-            <p className="text-center mt-4">
-              <Link href="/forgot-password" className="text-yellow-500">Forgot password?</Link>
-            </p>
+          <form onSubmit={handleSubmit}>
+        <div className="relative w-full mb-4">
+  <SlEnvolope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl text-black" />
+ <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            className="w-full border border-gray-300 rounded px-10 py-2 focus:border-bordercoloryello focus:outline-none"
+            onChange={handleChange}
+            required
+          />
+</div>
+          <div className="relative w-full mb-4">
+  <MdLockOutline className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl text-black" />
+  <input
+    type="password"
+    name="password"
+    placeholder="Password"
+    className="w-full border border-gray-300 rounded px-10 py-2 focus:border-bordercoloryello focus:outline-none"
+    onChange={handleChange}
+    required
+  />
+</div>
+<div className="relative w-full mb-4">
+  <AiOutlineUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl text-black" />
+  <input
+            type="text"
+             name="userName"        
+            placeholder="Name"
+            className="w-full border border-gray-300 rounded px-10 py-2 focus:border-bordercoloryello focus:outline-none"
+            onChange={handleChange}
+            required
+          />
+</div>
+        <button
+          type="submit"
+          className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 "
+        >
+         Sign Up
+        </button>
           </form>
           <div className="text-center mt-8">
             <p>or</p>

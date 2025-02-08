@@ -15,6 +15,7 @@ export default function Home() {
     <>
      <div className="bg-blackkk">
      <Nav/>
+     {/* <Authpic/> */}
      <HeroSection/>
      <Bestfoodyproduct/>
     <Foodcatr/>

@@ -11,16 +11,16 @@ const Bestfoodyproduct = () => {
       <div className='lg:w-[662px] lh:h-[562px] w-[300px] h-[300px]'>
         <h1 className='text-bordercoloryello font-greatVibes lg:text-[32px] text-[30px] leading-[40px] font-medium'>About us</h1>
         <h1 className='font-helvetica lg:w-[400px] font-bold lg:text-[40px] text-[30px] leading-[45px] text-whitetext'><span className='text-bordercoloryello'>We</span> Create the best foody product</h1>
-        <p className='font-normal lg:text-[16px] text-[13px] lg:leading-6  text-whitetext lg:w-[480px] w-[280px] h-[48px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
+        <p className='font-normal lg:text-[16px] text-[13px] lg:leading-6  text-whitetext lg:w-[480px] w-[280px] h-[48px]'>At <span className='text-bordercoloryello'> AS Foods</span>, we believe in the power of home-cooked meals to bring warmth and joy to every table. Our journey began with a simple idea: to share the love and care of homemade food with everyone who craves authentic, healthy, and delicious dishes.</p>
        <div className='lg:block hidden'>
        <div className='leading-8 lg:mt-[90px] lg:block lg:text-[16px] text-whitetext flex flex-col lg:gap-[20px] '>
-            <p className='flex gap-[15px] lg:block '> <FaCheck className='text-whitetext lg:block hidden'/> Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
-            <p className='flex gap-[15px] lg:block '> <FaCheck className='text-whitetext lg:block hidden'/> Quisque diam pellentesque bibendum non dui volutpat fringilla</p>
-            <p className='flex gap-[15px] lg:block '> <FaCheck className='text-whitetext lg:block hidden'/> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p className='gap-[15px] flex '> <FaCheck className='text-whitetext mt-[7px] lg:block hidden'/><span className='text-bordercoloryello font-semibold'>Authenticity:</span>Recipes inspired by traditional flavors and home-style cooking.</p>
+            <p className='gap-[15px] flex '> <FaCheck className='text-whitetext mt-[7px] lg:block hidden'/><span className='text-bordercoloryello font-semibold'>Freshness:</span>Every dish is prepared fresh, ensuring high-quality & great taste.</p>
+            <p className='gap-[15px] flex '> <FaCheck className='text-whitetext mt-[7px] lg:block hidden'/><span className='text-bordercoloryello font-semibold'>Care:</span>Food made with love, just like youd make for your family.</p>
         </div>
        </div>
         <button></button>
-      </div>
+      </div> 
       <div className='lg:ml-[-260px] lg:h-[562px] h-[200px]'>
       <section className="">
   <div className="flex flex-wrap">

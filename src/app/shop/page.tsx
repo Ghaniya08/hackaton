@@ -5,6 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Header from "@/components/layout/Header";
 import SearchableProductList from "@/components/layout/Searchbar";
 import Link from "next/link";
+import { toast, ToastContainer} from 'react-toastify';
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
@@ -73,12 +74,38 @@ const ShopPage = () => {
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
     }
   };
+  const notify = (message: any, type: any) => {
+    if (type === "success") {
+      toast.success(message, {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else if (type === "error") {
+      toast.error(message, {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
+  };   
   const uniqueCategories = datas.filter(
     (item, index, self) =>
       index === self.findIndex((t) => t.category === item.category)
   );
   return (
     <div>
+      <ToastContainer />
       <Header text="Shop" title="Our Shop" />
       <div className="lg:mt-[50px] lg:mb-[50px] px:6 lg:px-[120px]">
         {loading ? (
@@ -183,16 +210,35 @@ const ShopPage = () => {
                                 View Product
                               </button>
                             </Link>
-                            <button 
-                              onClick={() => handleWishlistToggle(items)}
+                            <button
+                            
+                              onClick={() => handleWishlistToggle(items)
+                                
+                              }
                               className="p-2 mr-4"
                             >
+                              <ToastContainer />
                               {wishlist.find((w) => w._id === items._id) ? (
                                 <AiFillHeart className="text-red-600 text-xl" />
                               ) : (
                                 <AiOutlineHeart className="text-gray-600 text-xl" />
                               )}
                             </button>
+                            
+                            {/* <button
+  onClick={() => handleWishlistToggle(items)}
+  className="p-2 mr-4"
+>
+  <ToastContainer />
+  {wishlist.find((w) => w._id === items._id) ? (
+    <AiFillHeart className="text-red-600 text-xl" />
+  ) : (
+    <AiOutlineHeart className="text-gray-600 text-xl" />
+  )}
+</button> */}
+
+
+
                           </div>
                             <AddToCart 
   product={{
